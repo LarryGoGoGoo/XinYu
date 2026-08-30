@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.report-page.data-v-4408224a {
+  min-height: 100vh;
+  background: #f7f8fb;
+  padding: 24rpx;
+}
+.summary-card.data-v-4408224a,
+.chart-card.data-v-4408224a,
+.advice-card.data-v-4408224a,
+.ai-report-card.data-v-4408224a {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 16rpx 36rpx rgba(35, 45, 60, 0.08);
+}
+.label.data-v-4408224a {
+  color: #0a756b;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.paper-name.data-v-4408224a {
+  color: #242a31;
+  font-size: 34rpx;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.score-row.data-v-4408224a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 28rpx;
+}
+.score.data-v-4408224a {
+  color: #242a31;
+  font-size: 64rpx;
+  font-weight: 800;
+}
+.score-label.data-v-4408224a {
+  color: #8f86a0;
+  font-size: 24rpx;
+}
+.status.data-v-4408224a {
+  border-radius: 999rpx;
+  background: #e4f7ef;
+  color: #23725b;
+  padding: 12rpx 24rpx;
+  font-size: 26rpx;
+}
+.status.warning.data-v-4408224a {
+  background: #fff0e8;
+  color: #c75b2b;
+}
+.section-title.data-v-4408224a {
+  color: #242a31;
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-bottom: 20rpx;
+}
+.metric-grid.data-v-4408224a {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+  margin-bottom: 22rpx;
+}
+.metric-item.data-v-4408224a {
+  background: #edf5f7;
+  border-radius: 12rpx;
+  padding: 18rpx 10rpx;
+  text-align: center;
+}
+.metric-value.data-v-4408224a {
+  color: #0a756b;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.metric-label.data-v-4408224a {
+  color: #81758f;
+  font-size: 22rpx;
+  margin-top: 6rpx;
+}
+.advice-item.data-v-4408224a {
+  border-top: 1rpx solid #eef0f4;
+  padding-top: 20rpx;
+  margin-top: 20rpx;
+}
+.advice-title.data-v-4408224a {
+  color: #c75b2b;
+  font-size: 28rpx;
+  font-weight: 700;
+  margin-bottom: 8rpx;
+}
+.advice-text.data-v-4408224a,
+.plain-tip.data-v-4408224a {
+  color: #5f576d;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
+.ai-report-card.data-v-4408224a {
+  background: linear-gradient(180deg, #f5f9fb 0%, #ffffff 100%);
+  border: 1rpx solid #e3edf1;
+}
+.ai-block.data-v-4408224a {
+  margin-bottom: 20rpx;
+}
+.ai-block.data-v-4408224a:last-of-type {
+  margin-bottom: 0;
+}
+.ai-block-title.data-v-4408224a {
+  color: #0a756b;
+  font-size: 28rpx;
+  font-weight: 700;
+  margin-bottom: 8rpx;
+}
+.ai-block-text.data-v-4408224a {
+  color: #5f576d;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
+.ai-disclaimer.data-v-4408224a {
+  margin-top: 20rpx;
+  padding: 18rpx;
+  background: #fff8ec;
+  border-radius: 10rpx;
+  color: #9a7b4f;
+  font-size: 22rpx;
+  line-height: 1.6;
+}
+.medical-disclaimer.data-v-4408224a {
+  margin-bottom: 24rpx;
+  padding: 24rpx;
+  background: #f0f6f5;
+  border: 1rpx solid #d8e8e5;
+  border-radius: 14rpx;
+}
+.disclaimer-title.data-v-4408224a {
+  color: #0a756b;
+  font-size: 26rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+}
+.disclaimer-text.data-v-4408224a {
+  color: #5f6f6b;
+  font-size: 24rpx;
+  line-height: 1.7;
+}
+.bottom-actions.data-v-4408224a {
+  padding: 8rpx 0 34rpx;
+}
+.primary-btn.data-v-4408224a {
+  width: 100%;
+  height: 84rpx;
+  line-height: 84rpx;
+  border-radius: 999rpx;
+  background: #0a756b;
+  color: #fff;
+  font-size: 30rpx;
+}

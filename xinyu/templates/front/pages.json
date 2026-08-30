@@ -1,0 +1,471 @@
+{
+	"pages": [ {
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "首页"
+		}
+	},{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "登录"
+		}
+	}, {
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "注册"
+		}
+	}, {
+		"path": "pages/forget/forget",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "忘记密码"
+		}
+	}, {
+		"path": "pages/center/center",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的"
+		}
+	}, {
+		"path": "pages/user-info/user-info",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户信息"
+		}
+	}
+	, {
+		"path": "pages/news-detail/news-detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心灵资讯详情"
+		}
+	}
+	,{
+		"path": "pages/yonghu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户"
+		}
+	},{
+		"path": "pages/yonghu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户"
+		}
+	}
+	,{
+		"path": "pages/yonghu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户"
+		}
+	}
+	,{
+		"path": "pages/xinliyisheng/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理医生"
+		}
+	},{
+		"path": "pages/xinliyisheng/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理医生"
+		}
+	}
+	,{
+		"path": "pages/xinliyisheng/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理医生"
+		}
+	}
+	,{
+		"path": "pages/xinqingriji/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心情日记"
+		}
+	},{
+		"path": "pages/xinqingriji/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心情日记"
+		}
+	}
+	,{
+		"path": "pages/xinqingriji/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心情日记"
+		}
+	}
+	,{
+		"path": "pages/yuyuezixun/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "预约咨询"
+		}
+	},{
+		"path": "pages/yuyuezixun/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "预约咨询"
+		}
+	}
+	,{
+		"path": "pages/yuyuezixun/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "预约咨询"
+		}
+	}
+	,{
+		"path": "pages/yuyueshiduan/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "预约时段"
+		}
+	},{
+		"path": "pages/yuyueshiduan/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "预约时段"
+		}
+	}
+	,{
+		"path": "pages/yuyueshiduan/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "预约时段"
+		}
+	}
+	,{
+		"path": "pages/jiankangyujing/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "健康预警"
+		}
+	},{
+		"path": "pages/jiankangyujing/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "健康预警"
+		}
+	}
+	,{
+		"path": "pages/jiankangyujing/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "健康预警"
+		}
+	}
+	,{
+		"path": "pages/xinlizhishi/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理知识"
+		}
+	},{
+		"path": "pages/xinlizhishi/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理知识"
+		}
+	}
+	,{
+		"path": "pages/xinlizhishi/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理知识"
+		}
+	}
+	,{
+		"path": "pages/zhishifenlei/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "知识分类"
+		}
+	},{
+		"path": "pages/zhishifenlei/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "知识分类"
+		}
+	}
+	,{
+		"path": "pages/zhishifenlei/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "知识分类"
+		}
+	}
+	,{
+		"path": "pages/news/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心灵资讯"
+		}
+	},{
+		"path": "pages/news/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心灵资讯"
+		}
+	}
+	,{
+		"path": "pages/popupremind/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "弹窗提醒"
+		}
+	},{
+		"path": "pages/popupremind/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "弹窗提醒"
+		}
+	}
+	,{
+		"path": "pages/popupremind/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "弹窗提醒"
+		}
+	}
+	,{
+		"path": "pages/storeup/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "收藏表"
+		}
+	},{
+		"path": "pages/storeup/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "收藏表"
+		}
+	}
+	,{
+		"path": "pages/storeup/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "收藏表"
+		}
+	}
+	,{
+		"path": "pages/users/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "管理员"
+		}
+	},{
+		"path": "pages/users/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "管理员"
+		}
+	}
+	,{
+		"path": "pages/users/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "管理员"
+		}
+	}
+	,{
+		"path": "pages/discussxinqingriji/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心情日记评论"
+		}
+	},{
+		"path": "pages/discussxinqingriji/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心情日记评论"
+		}
+	}
+	,{
+		"path": "pages/discussxinqingriji/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心情日记评论"
+		}
+	}
+	,{
+		"path": "pages/discussxinlizhishi/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理知识评论"
+		}
+	},{
+		"path": "pages/discussxinlizhishi/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理知识评论"
+		}
+	}
+	,{
+		"path": "pages/discussxinlizhishi/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理知识评论"
+		}
+	}
+	, {
+		"path": "pages/exampaperlist/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心理测试"
+		}
+	}, {
+		"path": "pages/exampaperlist/exam",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/examrecord/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "测评报告"
+		}
+	}, {
+		"path": "pages/examrecord/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "测评明细"
+		}
+	}, {
+		"path": "pages/examrecord/report",
+		"style": {
+			"navigationBarBackgroundColor": "#0a756b",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "测评报告"
+		}
+	}, 	{
+		"path": "pages/examfailrecord/list",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "错题本"
+		}
+	}
+	,{
+		"path": "pages/doctor/index",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "医生助手"
+		}
+	}
+	,{
+		"path": "pages/xinyuai/index",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "心语AI"
+		}
+	}
+	,{
+		"path": "common/linkOthers/linkOthers",
+		"style": {
+			"navigationBarBackgroundColor": "#0e9488",
+			"navigationBarTextStyle": "white"
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "心语",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#9aa6b2",
+		"selectedColor": "#0e9488",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/index.png",
+				"selectedIconPath": "static/tabs/index1.png",
+				"text": "首页"
+			}
+			
+
+			,{
+				"pagePath": "pages/xinqingriji/list",
+				"iconPath": "/static/tabs/icon1.png",
+				"selectedIconPath": "/static/tabs/icon1_act.png",
+				"text": "心情日记"
+			}
+
+
+
+
+
+			,{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/tabs/mine.png",
+				"selectedIconPath": "static/tabs/mine1.png",
+				"text": "我的"
+			}
+		]
+	}
+}

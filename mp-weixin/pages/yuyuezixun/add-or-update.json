@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#0e9488",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "预约咨询",
+  "usingComponents": {
+    "w-picker": "/components/w-picker/w-picker",
+    "xia-editor": "/components/xia-editor/xia-editor",
+    "multiple-select": "/components/momo-multipleSelect/momo-multipleSelect"
+  }
+}

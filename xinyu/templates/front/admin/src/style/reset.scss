@@ -1,0 +1,57 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 表格数据数字对齐 */
+.el-table .cell {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 键盘焦点环 */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* 文件上传的删除提示 */
+.el-icon--close-tip {
+  display: none !important;
+}
+
+/* 覆盖浏览器默认的outline */
+.el-popper:focus-visible,
+.el-popper:focus {
+  outline: none;
+}
+
+/* 尊重系统减弱动效偏好 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

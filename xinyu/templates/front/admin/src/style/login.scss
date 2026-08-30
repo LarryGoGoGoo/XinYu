@@ -1,0 +1,434 @@
+/* ============================================================
+   心语 · 管理端 设计系统
+   设计基调：治愈青绿 · 专业可信 · 柔和留白
+   ============================================================ */
+
+/* ---------- 全局主题变量 ---------- */
+:root {
+  /* 品牌色：治愈青绿 */
+  --color-primary: #0E9488;
+  --color-primary-hover: #0A756B;
+  --color-primary-active: #085A52;
+  --color-primary-light: #E5F4F1;
+  --color-primary-soft: #F4FAF8;
+
+  /* 中性色 */
+  --color-text-primary: #22312C;
+  --color-text-secondary: #5A6B65;
+  --color-text-tertiary: #8A9893;
+  --color-bg-page: #F4F8F6;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-subtle: #F0F5F3;
+  --color-border: #E3EAE7;
+
+  /* 侧边栏 */
+  --color-sidebar-text: #DCEBE7;
+  --color-sidebar-active: rgba(255, 255, 255, 0.14);
+
+  /* 风险等级语义色 */
+  --color-level-low: #2E9E6B;
+  --color-level-mid: #D98A00;
+  --color-level-high: #E2574C;
+  --color-level-crisis: #C9302C;
+
+  /* 阴影 */
+  --shadow-card: 0 1px 2px rgba(16, 24, 20, 0.04), 0 4px 12px rgba(16, 24, 20, 0.06);
+  --shadow-card-hover: 0 4px 16px rgba(16, 24, 20, 0.10);
+
+  /* 圆角 */
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-dialog: 16px;
+  --radius-tag: 6px;
+
+  /* 旧按钮变量（兼容旧代码引用） */
+  --btn-bg-color-: #0E9488;
+  --btn-bg-hover-color-: #0A756B;
+  --btn-font-color-: #FFFFFF;
+  --btn-font-hover-color-: #FFFFFF;
+  --btn2-bg-color-: #F4F8F6;
+  --btn2-bg-hover-color-: #E3EAE7;
+  --btn2-font-color-: #22312C;
+  --btn2-font-hover-color-: #22312C;
+
+  /* ---------- Element Plus 变量覆盖 ---------- */
+  --el-color-primary: #0E9488;
+  --el-color-primary-light-3: #4EB3A6;
+  --el-color-primary-light-5: #7FC7BE;
+  --el-color-primary-light-7: #B1DDD6;
+  --el-color-primary-light-8: #CBE8E3;
+  --el-color-primary-light-9: #E5F4F1;
+  --el-color-primary-dark-2: #0A756B;
+
+  --el-text-color-primary: #22312C;
+  --el-text-color-regular: #5A6B65;
+  --el-text-color-secondary: #8A9893;
+  --el-text-color-placeholder: #8A9893;
+
+  --el-border-color: #E3EAE7;
+  --el-border-color-light: #E3EAE7;
+  --el-border-color-lighter: #EDF2F0;
+  --el-border-color-extra-light: #F0F5F3;
+
+  --el-fill-color-blank: #FFFFFF;
+  --el-fill-color-light: #F0F5F3;
+  --el-fill-color-lighter: #F4FAF8;
+  --el-bg-color: #FFFFFF;
+  --el-bg-color-page: #F4F8F6;
+  --el-bg-color-overlay: #FFFFFF;
+
+  --el-border-radius-base: 8px;
+  --el-border-radius-small: 6px;
+  --el-border-radius-round: 20px;
+}
+
+/* ---------- 登录页 ---------- */
+.login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 56px 48px;
+  overflow: hidden;
+  background-color: #EAF6F2;
+  background-image:
+    radial-gradient(1100px 560px at 88% -8%, rgba(14, 148, 136, 0.20), transparent 60%),
+    radial-gradient(860px 500px at -6% 108%, rgba(94, 224, 196, 0.18), transparent 55%),
+    linear-gradient(160deg, #EAF6F2 0%, #F4FAF8 48%, #EFF7F4 100%);
+
+  /* 装饰光斑 */
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    pointer-events: none;
+  }
+  &::before {
+    width: 440px;
+    height: 440px;
+    left: -140px;
+    top: -140px;
+    background: rgba(94, 224, 196, 0.22);
+  }
+  &::after {
+    width: 400px;
+    height: 400px;
+    right: -120px;
+    bottom: -140px;
+    background: rgba(14, 148, 136, 0.18);
+  }
+
+  /* ---------- 左侧品牌区 ---------- */
+  .login-brand {
+    position: relative;
+    z-index: 1;
+    flex: 0 1 480px;
+    max-width: 480px;
+
+    .login-brand__logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: #FFFFFF;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+      }
+    }
+
+    .login-brand__title {
+      margin: 0 0 16px;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--color-text-primary);
+    }
+
+    .login-brand__slogan {
+      margin: 0 0 40px;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    .login-brand__points {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      li {
+        position: relative;
+        padding-left: 30px;
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: var(--color-text-secondary);
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 2px;
+          top: 8px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: var(--color-primary);
+          box-shadow: 0 0 0 4px var(--color-primary-light);
+        }
+      }
+    }
+  }
+
+  /* ---------- 右侧表单卡片 ---------- */
+  .loginform {
+    position: relative;
+    z-index: 1;
+    width: 460px;
+    max-width: 100%;
+    border-radius: var(--radius-dialog);
+    padding: 46px 44px 36px;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(227, 234, 231, 0.9);
+    box-shadow: 0 16px 48px rgba(14, 90, 76, 0.12);
+
+    /* 顶部标题：品牌区已有项目名，隐藏卡片内重复标题 */
+    .title-box {
+      display: none;
+    }
+
+    /* 表单盒子：二级 */
+    .loginform-wrapper {
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    /* 主标题 */
+    .login-tip {
+      padding: 0;
+      color: var(--color-text-primary);
+      font-weight: 600;
+      font-size: 26px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+
+    /* 副标题 */
+    .login-sub {
+      margin: 0 0 30px;
+      font-size: 14px;
+      color: var(--color-text-tertiary);
+    }
+
+    .inner-wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  /* 媒体查询 */
+  @media screen and (max-width: 768px) {
+    padding: 32px 20px;
+    gap: 0;
+
+    .login-brand {
+      display: none;
+    }
+
+    .loginform {
+      width: 100%;
+      padding: 36px 24px;
+      background: #FFFFFF;
+    }
+  }
+
+  /* 表单项 */
+  .el-form-item {
+    border-radius: var(--radius-control);
+    padding: 0;
+    margin: 0 auto 24px auto;
+    width: 100%;
+    height: auto;
+  }
+
+  /* 提示语 */
+  .el-select__placeholder,
+  .el-input__inner::placeholder {
+    color: var(--color-text-tertiary);
+    font-size: 14px;
+  }
+
+  /* 标签 */
+  .el-form-item__label {
+    color: var(--color-text-secondary);
+  }
+
+  /* 通用输入框 */
+  .el-form-item__content {
+    line-height: 44px;
+  }
+
+  /* 文本框 */
+  .el-input {
+    --el-input-height: 44px;
+    font-size: 16px;
+  }
+
+  .el-input__wrapper {
+    box-shadow: none;
+    background: #FFFFFF;
+    border: 1px solid var(--color-border);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .el-input__wrapper.is-focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+  }
+  .el-input__wrapper .el-input__inner {
+    color: var(--color-text-primary);
+  }
+
+  /* 下拉 */
+  .el-select__wrapper {
+    line-height: 44px;
+    height: 44px;
+    box-shadow: none;
+    background: #FFFFFF;
+    transition: all 0.2s ease;
+    border: 1px solid var(--color-border);
+  }
+  .el-select__wrapper.is-focused {
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+    border-color: var(--color-primary);
+  }
+  .el-select__wrapper.is-hovering:not(.is-focused) {
+    box-shadow: none;
+  }
+
+  /* 验证码 */
+  .code {
+    .el-form-item__content {
+      flex-wrap: nowrap;
+    }
+
+    .code-box {
+      cursor: pointer;
+      margin: 0 0 0 10px;
+      display: flex;
+      border-radius: var(--radius-control);
+      flex: 0 0 auto;
+      background: var(--color-primary);
+      width: 120px;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      gap: 4px;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: var(--color-primary-hover);
+      }
+    }
+  }
+
+  /* 注册按钮盒子 */
+  .registerbox-login {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
+    height: auto;
+  }
+
+  /* 登录按钮 */
+  .login-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #0E9488 0%, #0A756B 100%);
+    padding: 4px 15px;
+    margin: 20px 0;
+    color: #FFFFFF;
+    border-radius: var(--radius-control);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    height: 48px;
+    border: none;
+    box-shadow: 0 6px 16px rgba(14, 148, 136, 0.32);
+    transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+
+    &:hover {
+      filter: brightness(1.05);
+      box-shadow: 0 8px 20px rgba(14, 148, 136, 0.40);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 10px rgba(14, 148, 136, 0.28);
+    }
+  }
+
+  /* 人脸识别 */
+  .el-button.is-text.face-btn {
+    background: var(--color-primary-soft);
+    width: auto;
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: var(--radius-control);
+
+    &:hover {
+      background: var(--color-primary-light);
+    }
+  }
+
+  /* 邮箱登陆 */
+  .el-button.is-text.email-btn {
+    background: var(--color-primary-soft);
+    width: auto;
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: var(--radius-control);
+
+    &:hover {
+      background: var(--color-primary-light);
+    }
+  }
+
+  /* 忘记密码 */
+  .face-forget-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .el-button.is-text.forget-btn {
+    color: var(--color-text-tertiary);
+    font-weight: 500;
+    font-size: 15px;
+    float: right;
+  }
+  .el-button.is-text.forget-btn:hover {
+    background: none;
+    color: var(--color-primary);
+  }
+}

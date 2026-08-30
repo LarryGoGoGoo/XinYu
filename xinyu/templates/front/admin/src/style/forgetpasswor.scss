@@ -1,0 +1,117 @@
+// --------------------
+// [忘记密码 界面的样式]
+// --------------------
+
+.forget-password {
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  background: url("http://codegen.caihongy.cn/20240201/16ba3d6813174f3ca7315ed484ce0d90.png") center center / 100% 100% no-repeat;
+  justify-content: center;
+  display: flex;
+
+  // 登录表单 form.default
+  .forget-form {
+    padding: 40px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px 0px;
+    margin: 0px;
+    border-radius: 30px;
+
+    background: rgb(255, 255, 255);
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    width: 44%;
+    height: auto;
+
+
+    // 标题
+    .title-default {
+      margin: 0px 0px 10px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      width: 100%;
+      line-height: 80px;
+      font-size: 30px;
+      text-shadow: none;
+      font-weight: bold;
+    }
+
+    // 标题2
+    .title1-default {
+      margin: 0px 0px 10px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      width: 100%;
+      line-height: 80px;
+      font-size: 30px;
+      text-shadow: none;
+      font-weight: bold;
+    }
+
+    // 表单盒子 box.default
+    .ant-form-item {
+      width: 80%;
+      padding: 0px;
+      margin: 0px auto 25px;
+      height: auto;
+
+      // label盒子
+      .ant-form-item-label {
+        width: 110px;
+        line-height: 44px;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        background: none;
+
+        label {
+          // ps:跟上面要一样，不然覆盖不了原label的部分字段
+          width: 110px;
+          line-height: 44px;
+          font-size: 14px;
+          color: rgb(0, 0, 0);
+          background: none;
+        }
+      }
+
+      // TODO:不代表所有input盒子，比如被禁止的input没有这个。应该有没有allowClear属性，有的话多一层
+      // input盒子 跟vue版本多一层 input.default
+      .ant-input-affix-wrapper {
+        font-size: 15px;
+        height: 44px;
+      }
+
+      // 兼容没有affix的盒子.跟上面同一个class input.default
+      :not(.ant-input-affix-wrapper)>.ant-input {
+        font-size: 15px;
+        height: 44px;
+      }
+
+
+      // input盒子：单选。跟上面同一个class
+      .ant-select {
+        font-size: 15px;
+        height: 44px;
+      }
+    }
+
+
+
+    // 有账号跳转登录提示
+    .text {
+      padding: 10px 10%;
+
+    }
+
+  }
+
+
+
+
+  // 这是忘记密码界面的
+  .stepx-wrapper {
+    margin: 0px auto 15px;
+    width: 80%;
+
+  }
+}

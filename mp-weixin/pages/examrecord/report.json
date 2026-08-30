@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#0a756b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "测评报告",
+  "usingComponents": {
+    "qiun-data-charts": "/components/qiun-data-charts/components/qiun-data-charts/qiun-data-charts"
+  }
+}

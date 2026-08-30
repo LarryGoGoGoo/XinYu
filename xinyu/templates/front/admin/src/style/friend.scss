@@ -1,0 +1,60 @@
+.friendchat-view {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .notip {
+    text-align: center;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.3s linear background-color;
+      background-color: #eee;
+    }
+  }
+
+  .left {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  .right {
+    flex: none;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+  }
+
+  .content {
+    font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .notreadnum {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    background-color: #f56c6c;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+}

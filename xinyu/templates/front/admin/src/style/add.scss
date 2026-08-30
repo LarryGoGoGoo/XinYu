@@ -1,0 +1,140 @@
+
+/* 公共的弹框 */
+.el-dialog.yy-dialog {
+  /* 宽度 */
+  --el-dialog-width: 80%;
+  padding: 0;
+  border-radius: var(--radius-dialog);
+  overflow: hidden;
+  margin-top: 100px;
+  max-width: 1150px;
+  min-width: 720px;
+  box-shadow: var(--shadow-card-hover);
+
+  .el-dialog__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--color-primary);
+    padding: 0;
+  }
+
+  .el-dialog__title {
+    color: #FFFFFF;
+  }
+
+  .el-dialog__headerbtn {
+    .el-dialog__close {
+      color: #FFFFFF;
+    }
+
+    &:hover .el-dialog__close {
+      color: var(--color-primary-light);
+    }
+  }
+
+  .el-dialog__body {
+    padding: var(--el-dialog-padding-primary);
+  }
+}
+
+/* 新增表单 */
+.editform {
+  background: none;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+
+  .el-form-item {
+    padding: 0;
+    margin: 0;
+    width: calc(50% - 10px);
+    height: auto;
+
+    /* 富文本的el-form-item */
+    &:has(.ql) {
+      width: 100%;
+    }
+
+    /* 多行文本的el-form-item */
+    &:has(textarea) {
+      width: 100%;
+    }
+  }
+
+  .el-form-item__label {
+    width: 120px;
+  }
+
+  .el-form-item__content {
+    align-items: flex-start;
+  }
+
+  /* 图片 */
+  .el-upload-list--picture-card {
+    --el-upload-list-picture-card-size: 100px;
+  }
+
+  .el-upload--picture-card {
+    --el-upload-picture-card-size: 100px;
+  }
+
+  .btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    gap: 20px;
+
+    .submit-btn {
+      border: none;
+      color: #FFFFFF;
+      background: var(--color-primary);
+      height: 36px;
+      line-height: 36px;
+      min-width: 90px;
+      border-radius: var(--radius-control);
+      transition: background 0.2s ease;
+
+      &:hover {
+        color: #FFFFFF;
+        background: var(--color-primary-hover);
+      }
+    }
+
+    .cancel-btn {
+      color: var(--color-text-primary);
+      background: var(--color-bg-subtle);
+      border: 1px solid var(--color-border);
+      height: 36px;
+      line-height: 36px;
+      min-width: 90px;
+      border-radius: var(--radius-control);
+      transition: background 0.2s ease;
+
+      &:hover {
+        color: var(--color-text-primary);
+        background: var(--color-border);
+      }
+    }
+  }
+
+  /* 人脸识别 */
+  .face-form-item {
+    display: flex;
+
+    img {
+      width: 102px;
+      height: 102px;
+      overflow: hidden;
+      border-radius: 8px;
+      position: relative;
+      display: inline-block;
+      border: 1px solid var(--color-border);
+    }
+  }
+}

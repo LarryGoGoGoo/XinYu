@@ -1,0 +1,162 @@
+/* 页面盒子 */
+.layout-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+
+  /* 菜单 */
+  .menu-wrapper {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    max-width: var(--menu-width--);
+    min-width: var(--menu-width--);
+    width: var(--menu-width--);
+    height: calc(100% - 0px);
+    overflow: hidden;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    z-index: 201;
+    padding: 10px;
+  }
+
+  /* 菜单2,占位元素,用来布局和动画 */
+  .menu2-wrapper {
+    background: linear-gradient(180deg, #0F5C4E 0%, #0A3E36 100%);
+    flex: 0 0 var(--menu-width--);
+    margin-left: 0px;
+    max-width: var(--menu-width--);
+    min-width: var(--menu-width--);
+    width: var(--menu-width--);
+  }
+
+  .el-menu-item {
+    border: none;
+    border-radius: var(--radius-control);
+    margin-bottom: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background-color: var(--color-sidebar-active);
+    }
+
+    &.is-active {
+      background-color: var(--color-sidebar-active);
+      position: relative;
+      color: #FFFFFF;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 60%;
+        border-radius: 2px;
+        background: #5EE0C4;
+      }
+    }
+  }
+
+  .el-sub-menu {
+    border: none;
+    border-radius: var(--radius-control);
+    margin-bottom: 6px;
+  }
+
+  ul.el-menu.el-menu--inline {
+    padding: 10px;
+  }
+
+  .el-sub-menu .el-menu-item {
+    border: none;
+    height: 34px;
+    line-height: 34px;
+  }
+
+  /* 内容区  */
+  .main-wrapper {
+    flex: 1 1 0%;
+    padding-top: 90px;
+    overflow: hidden;
+
+    /* 头部 */
+    .header-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 64px;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background: var(--color-bg-surface);
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-primary);
+      font-size: 14px;
+      z-index: 202;
+    }
+
+    /* 首页 */
+    .content-wrapper {
+      width: 100%;
+      overflow: hidden;
+      padding: 20px;
+    }
+  }
+
+  /* 过渡动画 */
+  .transiton_1 {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    transition-duration: 0.3s;
+  }
+}
+
+/* 这两个动画类名不能变，keyframes样式可以修改 */
+.animate__fadeSlideIn {
+  animation-name: fadeSlideIn;
+}
+
+.animate__fadeSlidOut {
+  animation-name: fadeSlideOut;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    transform: translate3d(-30px, 0, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+}
+
+.menu-btn-wrapper {
+  background: none;
+  padding: 0px;
+  border-radius: 0px;
+}
+.el-button.is-circle {
+  display: none;
+}

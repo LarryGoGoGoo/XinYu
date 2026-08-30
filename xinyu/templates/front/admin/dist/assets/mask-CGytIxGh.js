@@ -1,0 +1,1 @@
+function e(e){return e==null||(e=String(e).trim(),!e)?``:e.length<=1?e+`*`:e[0]+`*`.repeat(e.length-1)}function t(){return localStorage.getItem(`sessionTable`)===`users`}export{e as n,t};

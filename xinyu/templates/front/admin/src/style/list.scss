@@ -1,0 +1,215 @@
+/* 1. 页面容器 */
+.list-wrapper {
+  width: 100%;
+}
+
+/* 1.1 搜索 */
+.search-wrapper {
+  background-color: var(--color-bg-surface);
+  padding: 12px 10px 0 10px;
+  margin-bottom: 10px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+
+  .el-form-item {
+    margin-bottom: 12px;
+  }
+
+  /* 文本框宽度 */
+  .el-input {
+    --el-input-width: 180px;
+  }
+
+  /* 单选框宽度 */
+  .el-select {
+    --el-select-width: 180px;
+  }
+
+  /* 搜索按钮 */
+  .searchbtn {
+    .el-button {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--radius-control);
+      transition: background 0.2s ease;
+
+      &:hover {
+        background-color: var(--color-primary-hover);
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+/* 表格头thead */
+.el-table thead tr {
+  background: var(--color-bg-subtle) !important;
+}
+.el-table thead tr th {
+  background: none !important;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* 1.2 表头的按钮 */
+.header-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background-color: none;
+  border-radius: var(--radius-card);
+
+  .el-button + .el-button {
+    margin-left: 0;
+  }
+
+  /* 添加 */
+  .el-button.action-add {
+    background: var(--color-primary);
+    color: #FFFFFF;
+    border: none;
+    border-radius: var(--radius-control);
+    transition: background 0.2s ease;
+
+    .el-icon {
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      background: var(--color-primary-hover);
+    }
+  }
+
+  /* 删除 */
+  .el-button.action-removes {
+    background: var(--color-level-high);
+    color: #FFFFFF;
+    border: none;
+    border-radius: var(--radius-control);
+    transition: background 0.2s ease;
+
+    .el-icon {
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      background: #C94840;
+    }
+  }
+
+  /* 其它 */
+  .el-button {
+    background: var(--color-bg-subtle);
+    color: var(--color-text-primary);
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-control);
+
+    .el-icon {
+      color: var(--color-text-primary);
+    }
+  }
+}
+
+/* 1.3 表格 */
+.el-table {
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+
+  /* 行 hover */
+  --el-table-row-hover-bg-color: var(--color-primary-soft);
+
+  /* 提醒功能的高亮（中风险） */
+  .warn-row {
+    background-color: rgba(217, 138, 0, 0.06);
+  }
+
+  /* 精确跳转的焦点行：高亮闪烁提示 */
+  .focus-row > td.el-table__cell {
+    background-color: var(--color-primary-soft) !important;
+    animation: focus-row-pulse 2s ease-in-out 3;
+  }
+
+  @keyframes focus-row-pulse {
+    0% {
+      background-color: var(--color-primary-soft);
+    }
+    50% {
+      background-color: var(--color-primary-light, #cdeee9);
+    }
+    100% {
+      background-color: var(--color-primary-soft);
+    }
+  }
+
+  .cell {
+    line-height: 32px;
+  }
+}
+
+/* 表格的图片 */
+.table-image {
+  height: 32px;
+  border-radius: var(--radius-control);
+  overflow: hidden;
+}
+
+/* 表格的操作按钮 */
+.table-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .el-button + .el-button {
+    margin-left: 0;
+  }
+
+  /* 查看 */
+  .el-button.action-view {
+    color: var(--color-primary);
+  }
+  /* 删除 */
+  .el-button.action-delete {
+    color: var(--color-level-high);
+  }
+  /* 修改 */
+  .el-button.action-edit {
+    color: var(--color-level-mid);
+  }
+  /* 其他 */
+  .el-button {
+    color: var(--color-text-primary);
+    border: none;
+    background: none;
+    padding: 0;
+
+    .el-icon {
+      display: none;
+    }
+  }
+}
+
+/* 分页 */
+.pagination {
+  width: 100%;
+  background: none;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  /* 按钮的背景颜色 */
+  .el-pagination {
+    --el-pagination-button-bg-color: var(--color-bg-surface);
+  }
+
+  /* 激活 */
+  .el-pagination.is-background .el-pager li.is-active {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+  }
+}

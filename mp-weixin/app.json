@@ -1,0 +1,111 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forget/forget",
+    "pages/center/center",
+    "pages/user-info/user-info",
+    "pages/news-detail/news-detail",
+    "pages/yonghu/list",
+    "pages/yonghu/add-or-update",
+    "pages/yonghu/detail",
+    "pages/xinliyisheng/list",
+    "pages/xinliyisheng/add-or-update",
+    "pages/xinliyisheng/detail",
+    "pages/xinqingriji/list",
+    "pages/xinqingriji/add-or-update",
+    "pages/xinqingriji/detail",
+    "pages/yuyuezixun/list",
+    "pages/yuyuezixun/add-or-update",
+    "pages/yuyuezixun/detail",
+    "pages/yuyueshiduan/list",
+    "pages/yuyueshiduan/add-or-update",
+    "pages/yuyueshiduan/detail",
+    "pages/jiankangyujing/list",
+    "pages/jiankangyujing/add-or-update",
+    "pages/jiankangyujing/detail",
+    "pages/xinlizhishi/list",
+    "pages/xinlizhishi/add-or-update",
+    "pages/xinlizhishi/detail",
+    "pages/zhishifenlei/list",
+    "pages/zhishifenlei/add-or-update",
+    "pages/zhishifenlei/detail",
+    "pages/news/list",
+    "pages/news/add-or-update",
+    "pages/popupremind/list",
+    "pages/popupremind/add-or-update",
+    "pages/popupremind/detail",
+    "pages/storeup/list",
+    "pages/storeup/add-or-update",
+    "pages/storeup/detail",
+    "pages/users/list",
+    "pages/users/add-or-update",
+    "pages/users/detail",
+    "pages/discussxinqingriji/list",
+    "pages/discussxinqingriji/add-or-update",
+    "pages/discussxinqingriji/detail",
+    "pages/discussxinlizhishi/list",
+    "pages/discussxinlizhishi/add-or-update",
+    "pages/discussxinlizhishi/detail",
+    "pages/exampaperlist/list",
+    "pages/exampaperlist/exam",
+    "pages/examrecord/list",
+    "pages/examrecord/detail",
+    "pages/examrecord/report",
+    "pages/examfailrecord/list",
+    "pages/doctor/index",
+    "pages/xinyuai/index",
+    "common/linkOthers/linkOthers"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "心语",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#9aa6b2",
+    "selectedColor": "#0e9488",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/xinqingriji/list",
+        "iconPath": "/static/tabs/icon1.png",
+        "selectedIconPath": "/static/tabs/icon1_act.png",
+        "text": "心情日记"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取地址"
+    }
+  },
+  "requiredPrivateInfos": [
+    "chooseLocation",
+    "getLocation"
+  ],
+  "usingComponents": {
+    "uni-load-more": "/components/mescroll-uni/mescroll-uni",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "z-swiper-item": "/components/zebra-swiper/components/z-swiper-item/z-swiper-item",
+    "z-swiper": "/components/zebra-swiper/components/z-swiper/z-swiper",
+    "music-play": "/components/musicPlay/musicPlay"
+  }
+}

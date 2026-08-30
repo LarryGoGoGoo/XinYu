@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#0e9488",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "收藏表",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "zb-table": "/components/zb-table/zb-table"
+  }
+}

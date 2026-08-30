@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.doctor-page.data-v-1619804a {
+  min-height: 100vh;
+  background: #f4f8f7;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.card.data-v-1619804a {
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 28rpx 24rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 8rpx 24rpx rgba(61, 66, 82, 0.06);
+}
+.card-title.data-v-1619804a {
+  color: #263238;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.card-sub.data-v-1619804a {
+  color: #9aa6b2;
+  font-size: 24rpx;
+  font-weight: 400;
+}
+.symptom-grid.data-v-1619804a {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8rpx;
+}
+.symptom-item.data-v-1619804a {
+  margin: 0 16rpx 16rpx 0;
+  padding: 14rpx 28rpx;
+  border-radius: 999rpx;
+  background: #f4f8f7;
+  color: #667085;
+  font-size: 26rpx;
+  border: 2rpx solid transparent;
+}
+.symptom-active.data-v-1619804a {
+  background: #e5f4f1;
+  color: #0e9488;
+  border-color: #0e9488;
+}
+.symptom-input.data-v-1619804a {
+  width: 100%;
+  height: 160rpx;
+  padding: 20rpx 24rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+  background: #f4f8f7;
+  font-size: 26rpx;
+  color: #263238;
+  margin-bottom: 20rpx;
+}
+.submit-btn.data-v-1619804a {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background: #0e9488;
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.submit-btn[disabled].data-v-1619804a {
+  background: #b7d7d2;
+}
+.result-card.data-v-1619804a {
+  border-left: 8rpx solid #0e9488;
+}
+.result-header.data-v-1619804a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.result-title.data-v-1619804a {
+  color: #263238;
+  font-size: 32rpx;
+  font-weight: 600;
+  flex: 1;
+}
+.source-badge.data-v-1619804a {
+  font-size: 22rpx;
+  padding: 4rpx 16rpx;
+  border-radius: 999rpx;
+  color: #0e9488;
+  background: #e5f4f1;
+}
+.source-local.data-v-1619804a {
+  color: #d98a00;
+  background: rgba(217, 138, 0, 0.12);
+}
+.result-row.data-v-1619804a {
+  margin-bottom: 20rpx;
+}
+.result-label.data-v-1619804a {
+  display: block;
+  color: #0e9488;
+  font-size: 24rpx;
+  margin-bottom: 6rpx;
+}
+.result-value.data-v-1619804a {
+  display: block;
+  color: #263238;
+  font-size: 28rpx;
+  line-height: 42rpx;
+}
+.disclaimer.data-v-1619804a {
+  margin-top: 16rpx;
+  padding-top: 20rpx;
+  border-top: 2rpx solid #eef0f6;
+  color: #9aa6b2;
+  font-size: 22rpx;
+  line-height: 34rpx;
+}
+.history-item.data-v-1619804a {
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #f0f3f7;
+}
+.history-item.data-v-1619804a:last-child {
+  border-bottom: none;
+}
+.history-symptom.data-v-1619804a {
+  color: #263238;
+  font-size: 26rpx;
+  margin-bottom: 6rpx;
+}
+.history-dept.data-v-1619804a {
+  color: #0e9488;
+  font-size: 24rpx;
+  margin-bottom: 4rpx;
+}
+.history-time.data-v-1619804a {
+  color: #9aa6b2;
+  font-size: 22rpx;
+}

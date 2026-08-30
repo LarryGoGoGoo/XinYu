@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    // "target": "ES6",
+    // 基础目录作为项目根目录, 这应该指向包含 `src` 目录的路径
+    "baseUrl": "./",
+    "paths": {
+      // @ 作为 src目录别名
+      "@/*": ["src/*"], // VS Code 将 `@` 解析为 `src` 目录
+    }
+  },
+  // "exclude": ["node_modules", "dist"], // "...其他要排除的目录"
+  // "include": ["src/**/*"]
+}

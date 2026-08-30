@@ -1,0 +1,13 @@
+; 复制本文件为 config.ini 并修改为你的环境配置
+[sql]
+type = mysql
+host = 127.0.0.1
+port = 3306
+user = root
+passwd = 请改成你的MySQL密码
+db = xinli
+charset = utf8mb4
+[redis]
+host = 127.0.0.1
+port = 6379
+passwd = 请改成你的Redis密码

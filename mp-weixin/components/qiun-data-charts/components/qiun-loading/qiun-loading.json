@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "loading1": "/components/qiun-data-charts/components/qiun-loading/loading1",
+    "loading2": "/components/qiun-data-charts/components/qiun-loading/loading2",
+    "loading3": "/components/qiun-data-charts/components/qiun-loading/loading3",
+    "loading4": "/components/qiun-data-charts/components/qiun-loading/loading4",
+    "loading5": "/components/qiun-data-charts/components/qiun-loading/loading5"
+  }
+}

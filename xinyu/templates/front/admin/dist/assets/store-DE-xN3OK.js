@@ -1,0 +1,1 @@
+import{b as e,gt as t}from"./index-B4asHpr9.js";var n=``+new URL(`avatar-C0fvgLJr.jpeg`,import.meta.url).href;const r=e(`userinfo`,()=>{let e=t({avatar:n,username:`游客`});function r(t){e.value=t}return{userInfo:e,setUserInfo:r}});e(`menusVersion`,()=>{let e=t(0);function n(){e.value+=1}return{version:e,update:n}});export{r as t};

@@ -1,0 +1,58 @@
+/* 总盒子 */
+.home-wrapper {
+  width: 100%;
+  padding: 0;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
+  /* 统计容器 */
+  .statis-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  /* 图表单个盒子 */
+  .chart-wrapper-common {
+    display: inline-flex;
+    flex-direction: column;
+    height: 400px;
+    width: calc(50% - 10px);
+    background: var(--color-bg-surface);
+    margin: 0;
+    padding: 10px;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+
+    .echart-query {
+      .el-select {
+        width: auto;
+        max-width: 100%;
+        min-width: 160px;
+        --el-fill-color-blank: transparent;
+      }
+
+      .el-range-editor.el-input__wrapper {
+        max-width: 100%;
+      }
+
+      .el-input__wrapper {
+        background-color: transparent;
+      }
+    }
+
+    .chart-box {
+      flex: auto;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

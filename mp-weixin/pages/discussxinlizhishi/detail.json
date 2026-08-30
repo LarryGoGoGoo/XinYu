@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#0e9488",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "心理知识评论",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}
